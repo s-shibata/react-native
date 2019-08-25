@@ -15,8 +15,8 @@ const SLIDE_DATA = [
 /*WelcomeScreenというコンポーネントを作りますよ！*/
 class WelcomeScreen extends React.Component {
   renderSlides(){
-    /*map関数：その配列の中身を一個ずつ細切れにして*/
-
+    /*map関数：その配列の中身を一個ずつ細切れにして各要素全てに繰り返し処理をする*/
+    /*アロー関数とは無名の関数*/
     return SLIDE_DATA.map((slide, index) => {
       return (
         <View
