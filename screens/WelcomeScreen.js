@@ -1,3 +1,5 @@
+/*tetsetsetset*/
+
 import React from 'react';
 /*WelcomeScreenにとって外部にあるものはimprotする*/
 import { StyleSheet, Text, View, ScrollView, Dimensions} from 'react-native';
@@ -14,6 +16,7 @@ const SLIDE_DATA = [
 class WelcomeScreen extends React.Component {
   renderSlides(){
     /*map関数：その配列の中身を一個ずつ細切れにして*/
+
     return SLIDE_DATA.map((slide, index) => {
       return (
         <View
