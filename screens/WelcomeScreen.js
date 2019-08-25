@@ -25,7 +25,7 @@ class WelcomeScreen extends React.Component {
         >
           <Text>{slide.title}</Text>
           <Text>{slide.text}</Text>
-          <Text>{index + 1} </Text>
+          <Text>{index + 1}</Text>
         </View>
       );
     });
@@ -35,17 +35,16 @@ class WelcomeScreen extends React.Component {
 
   render() {
     return (
-
-      <ScrollView
-        /*horizontal　→　スクロール方向を横にする*/
-        horizontal
-        /*pagingEnabled　→　ヌルっからピタッと止まるようにする*/
-        pagingEnabled
-        /*描画エリアをスマホ画面上いっぱいにする*/
-        style={{ flex: 1 ,backgroundColor: 'skyblue'}}
-      >
+      /*horizontal　→　スクロール方向を横にする*/
+      /*pagingEnabled　→　ヌルっからピタッと止まるようにする*/
+      /*描画エリアをスマホ画面上いっぱいにする*/
       /*renderSlides関数を呼び出す*/
       /*thisは"WelcomeScreen"のこと、.は"~の中に"という意味*/
+      <ScrollView
+        horizontal
+        pagingEnabled
+        style={{ flex: 1 ,backgroundColor: 'skyblue'}}
+      >
         {this.renderSlides()}
       </ScrollView>
     );
