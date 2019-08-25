@@ -25,7 +25,7 @@ class WelcomeScreen extends React.Component {
         >
           <Text>{slide.title}</Text>
           <Text>{slide.text}</Text>
-          <Text>{index + 1} / 3</Text>
+          <Text>{index + 1} </Text>
         </View>
       );
     });
